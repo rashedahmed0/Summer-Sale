@@ -30,10 +30,24 @@ function productOnClick(productId, priceId) {
         Purchase.removeAttribute('disabled')
     }
 
-    const apply = document.getElementById('apply');
-    if (twoDigit >= 200) {
-        apply.removeAttribute('disabled')
+    const applyButton = document.getElementById('apply');
+    if (finalPrice >= 200) {
+        applyButton.removeAttribute('disabled');
     }
 
-
+    // apply section
+    applyButton.addEventListener('click', function () {
+        const input = document.getElementById('apply-input');
+        const inputValue = input.value;
+        // console.log(inputValue);
+        if (inputValue === 'SELL200') {
+            const discount = 20 / 100;
+            const finalDiscount = finalPrice * discount;
+            const discountPriceElement = document.getElementById('discount');
+            discountPriceElement.innerText = finalDiscount.toFixed(2);
+            const total = finalPrice - finalDiscount;
+            const totalContainer = document.getElementById('total');
+            totalContainer.innerText = total.toFixed(2);
+        }
+    });
 }
