@@ -46,7 +46,9 @@
             <div class="shopping-item flex flex-col md:flex-row mb-10">
 
                 <!-- card -->
-                <div class="card bg-base-100 w-[100%] mx-auto md:w-[30%] m-5 shadow-xl p-3">
+                <div id="card-1"
+                    onclick="productOnClick(document.getElementById('product-1'),document.getElementById('price-1'))"
+                    class="card bg-base-100 w-[100%] mx-auto md:w-[30%] m-5 shadow-xl p-3">
                     <figure class="px-10 py-10 bg-[#efefef]">
                         <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -59,13 +61,16 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h1 class="text-xl font-semibold">K. Accessories</h1>
-                        <p class="text-lg font-semibold text-[#777]"><span class="price">39.00</span> TK</p>
+                        <h1 id="product-1" class="product-name text-xl font-semibold">K. Accessories</h1>
+                        <p class="text-lg font-semibold text-[#777]"><span class="price" id="price-1">39.00</span> TK
+                        </p>
                     </div>
                 </div>
 
                 <!-- card -->
-                <div class="card bg-base-100 w-[100%] mx-auto md:w-[30%]  m-5 shadow-xl p-3">
+                <div id="card-2"
+                    onclick="productOnClick(document.getElementById('product-2'), document.getElementById('price-2'))"
+                    class="card bg-base-100 w-[100%] mx-auto md:w-[30%]  m-5 shadow-xl p-3">
                     <figure class="px-10 py-10 bg-[#efefef]">
                         <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -78,13 +83,16 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h1 class="text-xl font-semibold">K. Accessories</h1>
-                        <p class="text-lg font-semibold text-[#777]"><span class="price">69.00</span> TK</p>
+                        <h1 id="product-2" class="product-name text-xl font-semibold">K. Accessories</h1>
+                        <p id="price-2" class="text-lg font-semibold text-[#777]"><span class="price">69.00</span> TK
+                        </p>
                     </div>
                 </div>
 
                 <!-- card -->
-                <div class="card bg-base-100 w-[100%] mx-auto  md:w-[30%]  m-5 shadow-xl p-3">
+                <div id="card-3"
+                    onclick="productOnClick(document.getElementById('product-3'),document.getElementById('price-3'))"
+                    class="card bg-base-100 w-[100%] mx-auto  md:w-[30%]  m-5 shadow-xl p-3">
                     <figure class="px-10 py-10 bg-[#efefef]">
                         <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -97,8 +105,9 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h1 class="text-xl font-semibold">Home Cooker</h1>
-                        <p class="text-lg font-semibold text-[#777]"><span class="price">49.00</span> TK</p>
+                        <h1 id="product-3" class="text-xl font-semibold">Home Cooker</h1>
+                        <p id="price-3" class="text-lg font-semibold text-[#777]"><span class="price">49.00</span> TK
+                        </p>
                     </div>
                 </div>
 
@@ -108,7 +117,9 @@
             <div class="shopping-item flex flex-col md:flex-row ">
 
                 <!-- card -->
-                <div class="card bg-base-100 w-[100%] mx-auto md:w-[30%] m-5 shadow-xl p-3">
+                <div id="card-4"
+                    onclick="productOnClick(document.getElementById('product-4'), document.getElementById('price-4'))"
+                    class="card bg-base-100 w-[100%] mx-auto md:w-[30%] m-5 shadow-xl p-3">
                     <figure class="px-10 py-10 bg-[#efefef]">
                         <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -121,13 +132,16 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h1 class="text-xl font-semibold">Sports Back Cap</h1>
-                        <p class="text-lg font-semibold text-[#777]"><span class="price">29.00</span> TK</p>
+                        <h1 id="product-4" class="text-xl font-semibold">Sports Back Cap</h1>
+                        <p id="price-4" class="text-lg font-semibold text-[#777]"><span class="price">29.00</span> TK
+                        </p>
                     </div>
                 </div>
 
                 <!-- card -->
-                <div class="card bg-base-100 w-[100%] mx-auto md:w-[30%]  m-5 shadow-xl p-3">
+                <div id="card-5"
+                    onclick="productOnClick(document.getElementById('product-5'),document.getElementById('price-5'))"
+                    class="card bg-base-100 w-[100%] mx-auto md:w-[30%]  m-5 shadow-xl p-3">
                     <figure class="px-10 py-10 bg-[#efefef]">
                         <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -140,13 +154,16 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h1 class="text-xl font-semibold">Full Jersey Set</h1>
-                        <p class="text-lg font-semibold text-[#777]"><span class="price">49.00</span> TK</p>
+                        <h1 id="product-5" class="text-xl font-semibold">Full Jersey Set</h1>
+                        <p id="price-5" class="text-lg font-semibold text-[#777]"><span class="price">49.00</span> TK
+                        </p>
                     </div>
                 </div>
 
                 <!-- card -->
-                <div class="card bg-base-100 w-[100%] mx-auto  md:w-[30%]  m-5 shadow-xl p-3">
+                <div id="card-6"
+                    onclick="productOnClick(document.getElementById('product-6') , document.getElementById('price-6'))"
+                    class="card bg-base-100 w-[100%] mx-auto  md:w-[30%]  m-5 shadow-xl p-3">
                     <figure class="px-10 py-10 bg-[#efefef]">
                         <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -159,8 +176,9 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h1 class="text-xl font-semibold">Sports cates</h1>
-                        <p class="text-lg font-semibold text-[#777]"><span class="price">89.00</span> TK</p>
+                        <h1 id="product-6" class="text-xl font-semibold">Sports cates</h1>
+                        <p id="price-6" class="text-lg font-semibold text-[#777]"><span class="price">89.00</span> TK
+                        </p>
                     </div>
                 </div>
 
@@ -172,23 +190,24 @@
                 <div class=" pl-5  p-5">
                     <h1 class="text-lg font-semibold mb-1">Have coupon?</h1>
                     <div class="input-apply">
-                        <input class="border-[2px] pl-1 py-1" type="text" placeholder="Coupon code">
-                        <button class="bg-[#E527B2] text-white py-1 px-3">Apply</button>
+                        <input class="border-[2px] pl-1 py-2" type="text" placeholder="Coupon code">
+                        <button id="apply" disabled class="btn btn-secondary text-white px-3">Apply</button>
                     </div>
                 </div>
                 <hr>
                 <div class=" p-5 mb-1 ">
-                    <ol class="list-decimal pl-5">
+                    <ol id="name-container" class="list-decimal pl-5">
                         <li>home</li>
                         <li>show</li>
                     </ol>
                 </div>
                 <hr>
                 <div class="p-5 mb-1 ">
-                    <p class="text-lg font-semibold">Total price:<span class="discount"> 00</span> TK</p>
-                    <p class="text-lg font-semibold">Discount :<span class="discount"> 00</span> TK</p>
-                    <p class="text-lg font-semibold">Total: <span class="total"> 00</span> TK</p>
-                    <button class="bg-[#E527B2] text-white py-1 px-3 mt-2">Make Purchase</button>
+                    <p class="text-lg font-semibold">Total price:<span id="Total-price"> 00</span> TK</p>
+                    <p class="text-lg font-semibold">Discount :<span id="discount"> 00</span> TK</p>
+                    <p class="text-lg font-semibold">Total: <span id="total"> 00</span> TK</p>
+                    <button id="Purchase" disabled class="btn btn-secondary text-white py-1 px-3 mt-2">Make
+                        Purchase</button>
                 </div>
 
             </div>
