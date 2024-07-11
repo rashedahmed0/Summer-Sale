@@ -2,7 +2,7 @@
 
 function productOnClick(productId, priceId) {
     // product section 
-    const productName = productId;
+    const productName = document.getElementById(productId);
     // console.log(productName);
     const productNameInnerText = productName.innerText;
     const nameContainer = document.getElementById('name-container');
@@ -11,7 +11,7 @@ function productOnClick(productId, priceId) {
     nameContainer.appendChild(li);
 
     // price section 
-    const productPrice = priceId;
+    const productPrice = document.getElementById(priceId);
     const pPInnerText = productPrice.innerText;
     const numberPPInnerText = parseFloat(pPInnerText);
     console.log(numberPPInnerText);
